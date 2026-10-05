@@ -5,7 +5,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddSingleton<ProductStore>();
+var productsConnectionString = builder.Configuration.GetConnectionString("ProductsDb");
+if (string.IsNullOrWhiteSpace(productsConnectionString))
+    builder.Services.AddSingleton<IProductStore, ProductStore>();
+else
+    builder.Services.AddSingleton<IProductStore>(new SqlProductStore(productsConnectionString));
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("StaticFrontend", policy =>

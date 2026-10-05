@@ -3,7 +3,7 @@ using TechStore.Api.Models;
 
 namespace TechStore.Api.Data;
 
-public sealed class ProductStore
+public sealed class ProductStore : IProductStore
 {
     private static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web)
     {

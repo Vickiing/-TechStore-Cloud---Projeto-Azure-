@@ -6,7 +6,7 @@ namespace TechStore.Api.Controllers;
 
 [ApiController]
 [Route("api/products")]
-public sealed class ProductsController(ProductStore store) : ControllerBase
+public sealed class ProductsController(IProductStore store) : ControllerBase
 {
     [HttpGet]
     public ActionResult<IReadOnlyList<Product>> GetAll() => Ok(store.GetAll());

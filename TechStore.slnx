@@ -5,6 +5,5 @@
     <File Path="TechStore.Web/styles.css" />
     <File Path="TechStore.Web/app.js" />
     <File Path="TechStore.Web/config.js" />
-    <File Path="TechStore.Web/README.md" />
   </Folder>
 </Solution>
