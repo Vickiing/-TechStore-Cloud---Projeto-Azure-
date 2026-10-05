@@ -1,0 +1,17 @@
+# Visual Studio e .NET
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+
+# Publicação e dados locais
+**/PublishProfiles/
+**/Data/products.json
+**/Data/*.tmp
+
+# Configurações locais e segredos
+.env
+.env.*
+appsettings.Local.json
+.az-cli-temp/

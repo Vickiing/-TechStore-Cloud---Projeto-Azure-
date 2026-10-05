@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="TechStore.Api/TechStore.Api.csproj" />
+  <Folder Name="/TechStore.Web/">
+    <File Path="TechStore.Web/index.html" />
+    <File Path="TechStore.Web/styles.css" />
+    <File Path="TechStore.Web/app.js" />
+    <File Path="TechStore.Web/config.js" />
+    <File Path="TechStore.Web/README.md" />
+  </Folder>
+</Solution>
